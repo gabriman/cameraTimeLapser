@@ -113,7 +113,7 @@ if handles.initialized == false
     % ----------------------------------
     
     try
-    [handles.options,handles.XMLobj] = camControl_Init(programFolder);
+    [handles.options,handles.XMLobj] = camControl_init(programFolder);
     pause(2);
     catch ME
         errordlg(char('Program Folder incorrect. Please, config it in "Config" button'));
